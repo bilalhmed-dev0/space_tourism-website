@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("/starter-code/assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+h3{
+    margin-left: 50px;
+}
+
+nav{
+    width: 600px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.233);
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+h1{
+    position: absolute;
+    left: 100px;
+    top: 180px;
+    color: white;
+}
+h2{
+    position: absolute;
+    left: 100px;
+    top: 280px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #7e7e7e;
+}
+.h3a{
+    position: absolute;
+    left: 50px;
+    top: 350px;
+    font-size: 40px;
+    color:white;
+    font-weight: 600;
+}
+
+.menu-btn{
+    display: none;
+    cursor: pointer;
+ }
+ 
+ .btn-line1,
+ .btn-line2,
+ .btn-line3{
+     width: 30px;
+     height: 5px;
+     background: white;
+     margin: 5px;
+ }
+ 
+
+
+p{
+    position: absolute;
+    left: 100px;
+    top: 430px;
+    color: rgb(223, 217, 217);
+    line-height: 1.5;
+}
+img{
+    position: absolute;
+    right: 50px;
+    top: 190px;
+    width: 300px;
+}
+.dots4{
+     position: absolute;
+     left: 100px;
+     top: 540px;
+     width: 10%;
+     display: flex;
+     justify-content: space-around;
+
+}
+.div1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid   #7e7e7e;
+}
+.div2{
+    width: 20px;
+    height: 20px;
+    border: 1px solid   #7e7e7e;
+    border-radius: 50%;
+}
+.div3{
+    width: 20px;
+    height: 20px;
+    border: 1px solid   #7e7e7e;
+    border-radius: 50%;
+}
+.div4{
+    width: 20px;
+    height: 20px;
+    border: 1px solid   #7e7e7e;
+    border-radius: 50%;
+}
+.onuse{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* make it mobile responsive*/
+
+@media (max-width:500px) {
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        background: url("/starter-code/assets/crew/background-crew-mobile.jpg");
+        background-size: cover;
+    }
+   
+    nav{
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        z-index: 10;
+        background: grey;
+        opacity: 5;
+        
+        
+    }
+    
+    nav.active{
+        visibility: visible;
+    }
+    
+    h1{
+        position: absolute;
+        left: 80px;
+        top: 120px;
+    }
+    h2{
+        position: absolute;
+        left: 120px;
+        top: 180px;
+    }
+    .menu-btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+    .menu-btn.active .btn-line1{
+        transform: rotate(45deg) translate(7px, 6px);
+    }
+    .menu-btn.active .btn-line2{
+        opacity: 0;
+    }
+    .menu-btn.active .btn-line3{
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+        
+    .h3a{
+        position: absolute;
+        left: 20px;
+        top: 250px;
+        font-size: 40px;
+        color:white;
+        font-weight: 600;
+    }
+        
+    p{
+        position: absolute;
+        left: 50px;
+        top: 350px;
+        color: rgb(223, 217, 217);
+        line-height: 1.5;
+    }
+        
+    .dots4{
+        position: absolute;
+        left: 150px;
+        top: 540px;
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+        
+    img{
+        position: absolute;
+        right: 50px;
+        top: 570px;
+        width: 300px;
+    }
+}

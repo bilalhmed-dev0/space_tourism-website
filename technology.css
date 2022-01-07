@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("/starter-code/assets/technology/background-technology-desktop.jpg");
+    font-family: 'Poppins', sans-serif;
+}
+
+   
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+h3{
+    margin-left: 50px;
+}
+nav{
+    width: 600px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.233);
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.header1{
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    color: white;
+}
+h2{
+    position: absolute;
+    left: 250px;
+    top: 270px;
+    color: #7e7e7e;
+    font-size:15px;
+    font-weight: 200;
+}
+
+.menu-btn{
+    display: none;
+    cursor: pointer;
+ }
+ 
+ 
+ 
+ 
+ .btn-line1,
+ .btn-line2,
+ .btn-line3{
+     width: 30px;
+     height: 5px;
+     background: white;
+     margin: 5px;
+ }
+.techh3{
+    position: absolute;
+    text-transform: uppercase;
+    left: 200px;
+    top: 300px;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+p{
+    position: absolute;
+    left: 250px;
+    top: 350px;
+    color: white;
+    line-height: 1.5;
+    font-weight: 100;
+}
+img{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    width: 350px;
+}
+.dots3{
+    width: 5%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    left: 100px;
+    top: 270px;
+   
+}
+.dot1{
+    width: 50px;
+    height: 50px;
+    /*background: white;*/
+    border-radius: 50%;
+    border: 1px solid   #7e7e7e;
+}
+.dot1no{
+    position: absolute;
+    left: 18px;
+    top: 30px;
+    font-size: 20px;
+    color: #7e7e7e;
+}
+.dot2{
+    width: 50px;
+    height: 50px;
+    /*background: white;*/
+    border-radius: 50%;
+    border: 1px solid   #7e7e7e;
+}
+.dot2no{
+    position: absolute;
+    left: 18px;
+    top: 110px;
+    font-size: 20px;
+    color: #7e7e7e;
+}
+
+.dot3{
+    width: 50px;
+    height: 50px;
+   /* background: white;*/
+    border-radius: 50%;
+    border: 1px solid   #7e7e7e;
+}
+.dot3no{
+    position: absolute;
+    left: 18px;
+    top: 190px;
+    font-size: 20px;
+    color: #7e7e7e;
+}
+.active1 {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    
+}
+/* styling for the images for technology tab*/
+.imgfortech{
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    width: 350px;
+}
+
+/* make it mobile responsive*/
+
+@media (max-width:500px) {
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        background: url("/starter-code/assets/technology/background-technology-mobile.jpg");
+        background-size: cover;
+    }
+   
+    nav{
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        z-index: 10;
+        background: grey;
+        opacity: 5;
+    }
+    nav.active{
+        visibility: visible;
+    }
+    
+    .menu-btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+    .menu-btn.active .btn-line1{
+        transform: rotate(45deg) translate(7px, 6px);
+    }
+    .menu-btn.active .btn-line2{
+        opacity: 0;
+    }
+    .menu-btn.active .btn-line3{
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .header1{
+        position: absolute;
+        left: 60px;
+        top: 150px;
+        color: white;
+    }
+    h2{
+        position: absolute;
+        left: 100px;
+        top: 230px;
+        color: #7e7e7e;
+        font-size:25px;
+        font-weight: 200;
+    }
+        
+    .techh3{
+        position: absolute;
+        text-transform: uppercase;
+        left: 30px;
+        top: 300px;
+        font-size: 30px;
+        font-weight: 300;
+        color: white;
+    }
+        
+    p{
+        position: absolute;
+        left: 60px;
+        top: 350px;
+        color: white;
+        line-height: 1.5;
+        font-weight: 100;
+        font-size: 13px;
+    }
+    .imgfortech{
+        position: absolute;
+        left: 30px;
+        top: 750px;
+        width: 350px;
+    }
+        
+    .dots3{
+        width: 5%;
+        height: 40%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        position: absolute;
+        left: 180px;
+        top: 450px;
+    
+    }
+    .dot1{
+        width: 50px;
+        height: 50px;
+        /*background: white;*/
+        border-radius: 50%;
+        border: 1px solid   #7e7e7e;
+    }
+    .dot1no{
+        position: absolute;
+        left: 18px;
+        top: 35px;
+        font-size: 20px;
+        color: #7e7e7e;
+    }
+    .dot2{
+        width: 50px;
+        height: 50px;
+        /*background: white;*/
+        border-radius: 50%;
+        border: 1px solid   #7e7e7e;
+    }
+    .dot2no{
+        position: absolute;
+        left: 18px;
+        top: 135px;
+        font-size: 20px;
+        color: #7e7e7e;
+    }
+
+    .dot3{
+        width: 50px;
+        height: 50px;
+    /* background: white;*/
+        border-radius: 50%;
+        border: 1px solid   #7e7e7e;
+    }
+    .dot3no{
+        position: absolute;
+        left: 18px;
+        top: 235px;
+        font-size: 20px;
+        color: #7e7e7e;
+    }
+            
+    
+}

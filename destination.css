@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("/starter-code/assets/destination/background-destination-desktop.jpg");
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+h3{
+    margin-left: 50px;
+}
+nav{
+    width: 600px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.233);
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.header1{
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    color: white;
+}
+img{
+    position: absolute;
+    left: 150px;
+    top: 210px;
+    width: 350px;
+}
+ul{
+    position: absolute;
+    width: 30%;
+    right: 150px;
+    top: 230px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+button{
+    background: none;
+    border: none;
+  
+}
+button a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.menu-btn{
+    display: none;
+    cursor: pointer;
+ }
+ 
+ 
+ .btn-line1,
+ .btn-line2,
+ .btn-line3{
+     width: 30px;
+     height: 5px;
+     background: white;
+     margin: 5px;
+ }
+
+   
+h2{
+    color: white;
+    position: absolute;
+    right: 168px;
+    top: 250px;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.mainp{
+    position: absolute;
+    right: 120px;
+    top: 370px;
+    color: #7e7e7e;
+    line-height: 1.5;
+}
+hr{
+    position: absolute;
+    right: 140px;
+    top: 470px;
+}
+.h31{
+    color: white;
+    position: absolute;
+    right: 410px;
+    top: 500px;
+    font-size: 10px;
+   
+}
+.h41{
+    color: white;
+    position: absolute;
+    right: 230px;
+    top: 500px;
+    font-size: 10px;
+}
+.avg{
+    position: absolute;
+    right: 395px;
+    top: 520px;
+    color: white;
+}
+.est{
+    position: absolute;
+    right: 240px;
+    top: 520px;
+    color: white;
+}
+.europah2{
+    color: white;
+    position: absolute;
+    right: 130px;
+    top: 250px;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.current{
+    border-bottom: 2px solid white;
+}
+/* styling mobile view */
+
+@media (max-width:500px) {
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        background: url("/starter-code/assets/destination/background-destination-mobile.jpg");
+        background-size: cover;
+        background-size: cover;
+    }
+   
+    nav{
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        z-index: 10;
+        background: grey;
+        opacity: 5;
+    }
+    nav.active{
+        visibility: visible;
+    }
+    .menu-btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+    .menu-btn.active .btn-line1{
+        transform: rotate(45deg) translate(7px, 6px);
+    }
+    .menu-btn.active .btn-line2{
+        opacity: 0;
+    }
+    .menu-btn.active .btn-line3{
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    img{
+        position: absolute;
+        left: 50px;
+        top: 180px;
+        width: 350px;
+    }
+   
+    .header1{
+        position: absolute;
+        left: 50px;
+        top: 120px;
+        color: white;
+    }
+    h2{
+        position: absolute;
+        left: 130px;
+        top: 600px;
+        font-size: 50px;
+    }
+    .mainp{
+        position: absolute;
+        left: 100px;
+        top: 680px;
+        color: #7e7e7e;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    hr{
+        position: absolute;
+        left: 20px;
+        top: 850px;
+    }
+    ul{
+        position: absolute;
+        left: 60px;
+        top: 570px;
+        width: 70%;
+       
+    }
+        
+    button{
+        background: none;
+        border: none;
+    
+    }
+    button a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 17px;
+        
+    }
+        
+  
+        
+    .h31{
+        color: white;
+        position: absolute;
+        left: -20px;
+        top: 900px;
+        font-size: 10px;
+        white-space: nowrap;
+        font-size: 20px;
+    
+    }
+    .h41{
+        color: white;
+        position: absolute;
+        left: 170px;
+        top: 900px;
+        font-size: 10px;
+        white-space: nowrap;
+        font-size: 20px;
+    }
+    .avg{
+        position: absolute;
+        left: 10px;
+        top: 950px;
+        color: white;
+        white-space: nowrap;
+        font-size: 25px;
+    }
+    .est{
+        position: absolute;
+        left: 250px;
+        top: 950px;
+        color: white;
+        white-space: nowrap;
+        font-size: 25px;
+    }
+    .europah2{
+        position: absolute;
+        left: 130px;
+        top: 600px;
+        font-size: 50px;
+    }
+            
+        
+        
+}

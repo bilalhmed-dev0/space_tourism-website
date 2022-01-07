@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("/starter-code/assets/home/background-home-desktop.jpg");
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+   
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+h3{
+    margin-left: 50px;
+}
+.menu-btn{
+   display: none;
+   cursor: pointer;
+}
+
+
+.btn-line1,
+.btn-line2,
+.btn-line3{
+    width: 30px;
+    height: 5px;
+    background: white;
+    margin: 5px;
+}
+
+nav{
+    width: 600px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.233);
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+h1 , h2 ,p{
+    color: white;
+}
+h1{
+    position: absolute;
+    left: 100px;
+    top: 250px;
+}
+h2{
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+p{
+    position: absolute;
+    left: 100px;
+    top: 450px;
+    line-height: 1.5;
+}
+.explore{
+    width: 200px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    right: 200px;
+    top: 330px;
+    border-radius: 50%;
+}
+.exp{
+    position: relative;
+}
+.exp h3{
+    position: absolute;
+    left: 3px;
+    top: 80px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+
+/* make it mobile responsive*/
+
+@media (max-width:500px) {
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        background: url("/starter-code/assets/home/background-home-mobile.jpg");
+        background-size: cover;
+    }
+   
+    nav{
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        z-index: 10;
+        background: grey;
+        opacity: 5;
+        
+       
+       
+      
+        
+    }
+    nav.active{
+        visibility: visible;
+       
+    }
+        
+    nav li a{
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+        .menu-btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+    .menu-btn.active .btn-line1{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .menu-btn.active .btn-line2{
+        opacity: 0;
+    }
+    .menu-btn.active .btn-line3{
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    .menu-btn.close{
+        transform: rotate(180deg);
+    }
+    
+    
+    
+    
+    
+    h1{
+        white-space: nowrap;
+        position: absolute;
+        left: 34px;
+        top: 150px;
+        font-size: 25px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    h2{
+        position: absolute;
+        left: 40px;
+        top: 200px;
+    }
+    p{
+      position: absolute;
+      top: 350px;
+      left: 40px;
+     
+    }
+    .explore{
+        position: absolute;
+        top: 520px;
+        left: 100px;
+    }
+    .close nav{
+        display: block;
+    }
+}
